@@ -1,0 +1,11 @@
+.section {
+  margin: 4rem auto;
+  max-width: 700px;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
