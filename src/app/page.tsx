@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -19,37 +20,9 @@ export default function Home() {
         <div className={styles.ctas}>
 
         </div> 
+
+        <Footer />
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://www.linkedin.com/in/johnnypillacela/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/linkedin.png"
-            alt="LinkedIn icon"
-            width={16}
-            height={16}
-          />
-          LinkedIn
-        </a>
-        <a
-          href="https://github.com/JohnnyPillacela"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/github-mark-white.png"
-            alt="GitHub icon"
-            width={16}
-            height={16}
-          />
-          GitHub
-        </a>
-      </footer>
     </div>
   );
 }
