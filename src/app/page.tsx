@@ -11,7 +11,7 @@ export default function Home() {
 
         <Image
           src="/ecu-johnny.PNG"
-          alt="Next.js logo"
+          alt="johnny's animated photo"
           width={180}
           height={200}
           priority
