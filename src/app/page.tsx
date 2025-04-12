@@ -10,7 +10,7 @@ export default function Home() {
         <Header />
 
         <Image
-          src="/ecu-johnny.png"
+          src="/ecu-johnny.PNG"
           alt="Next.js logo"
           width={180}
           height={200}
