@@ -12,8 +12,10 @@ export default function Home() {
         <Image
           src="/ecu-johnny.PNG"
           alt="johnny's animated photo"
-          width={180}
-          height={200}
+          width={500}
+          height={300}
+          layout="intrinsic"
+          objectFit="contain"
           priority
         />
 
