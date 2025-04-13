@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProfileImage from "./components/ProfileImage/ProfileImage";
 import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Header />
         <ProfileImage />
         <About />
+        <Experience />
 
         <div className={styles.ctas}>
 
