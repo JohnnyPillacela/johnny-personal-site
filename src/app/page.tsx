@@ -10,8 +10,8 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <Header />
-        <ProfileImage />
         <About />
+        <ProfileImage />
         <Experience />
 
         <div className={styles.ctas}>
