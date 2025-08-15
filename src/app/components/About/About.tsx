@@ -1,4 +1,5 @@
 import styles from "./About.module.css";
+import Image from "next/image";
 
 const SKILLS = [
   "AWS",
@@ -26,9 +27,9 @@ export default function About() {
         <div className={styles.content}>
           <h2 className={styles.heading}>About Me</h2>
           <p className={styles.description}>
-            Hey, I'm Johnny — a software engineer who loves building modern web applications. 
+            Hey, I&apos;m Johnny — a software engineer who loves building modern web applications. 
             I specialize in React and Next.js, creating fast, responsive sites with tools like 
-            Tailwind CSS and shadcn/ui. When I'm not coding, you'll find me working on 
+            Tailwind CSS and shadcn/ui. When I&apos;m not coding, you&apos;ll find me working on 
             construction projects or exploring new business opportunities.
           </p>
           
@@ -45,10 +46,13 @@ export default function About() {
         </div>
         
         <div className={styles.imageContainer}>
-          <img 
+          <Image 
             src="/ecu-johnny.PNG" 
             alt="Johnny's animated photo" 
             className={styles.image}
+            width={300}
+            height={300}
+            priority
           />
         </div>
       </div>
