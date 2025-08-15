@@ -1,7 +1,8 @@
 .section {
   padding: 2rem 1rem;
-  max-width: 768px;
+  max-width: 100%;
   margin: 0 auto;
+  flex: 1;
 }
 
 .heading {
@@ -16,6 +17,8 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .card {
@@ -86,4 +89,31 @@
   object-fit: contain;
   background: white;
   padding: 4px;
+}
+
+/* Desktop styles for side-by-side layout */
+@media (min-width: 1025px) {
+  .section {
+    max-width: 600px;
+  }
+  
+  .jobs {
+    max-width: 450px;
+  }
+  
+  .card {
+    padding: 0.875rem;
+  }
+  
+  .title {
+    font-size: 1rem;
+  }
+  
+  .company {
+    font-size: 0.9rem;
+  }
+  
+  .dates {
+    font-size: 0.8rem;
+  }
 }

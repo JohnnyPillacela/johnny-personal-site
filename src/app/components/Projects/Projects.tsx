@@ -43,21 +43,21 @@ const PROJECTS: Project[] = [
     title: "Ram Roofers",
     url: "https://ramroofers.com",
     description: "A professional roofing company website with modern design and contact forms for customer inquiries.",
-    technologies: ["React", "Next.js", "CSS", "Contact Forms"],
+    technologies: ["React", "Next.js", "TypeScript", "Tailwind", 'Contact Forms'],
   },
   {
     id: 2,
     title: "Pillacela Construction",
     url: "https://pillacela.com",
     description: "A personal portfolio and business website showcasing professional services and work experience.",
-    technologies: ["React", "Next.js", "TypeScript", "Responsive Design"],
+    technologies: ["React", "Next.js", "TypeScript",  "Shadcn/UI", "Responsive Design", "Tailwind"],
   },
   {
     id: 3,
     title: "Johnny Pillacela",
     url: "https://johnnypillacela.com",
     description: "Personal portfolio website highlighting software engineering skills, experience, and projects.",
-    technologies: ["React", "Next.js", "TypeScript", "Modern UI"],
+    technologies: ["React", "Next.js", "TypeScript", "CSS"],
   },
 ];
 

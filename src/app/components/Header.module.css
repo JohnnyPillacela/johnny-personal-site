@@ -1,0 +1,56 @@
+.header {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  text-align: center;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--foreground);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.name:hover {
+  color: #666666;
+}
+
+@media (prefers-color-scheme: dark) {
+  .name:hover {
+    color: #aaaaaa;
+  }
+}
+
+.title {
+  color: var(--foreground);
+  font-size: 1.25rem;
+  margin-top: 0.25rem;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+/* Desktop styles for side-by-side layout */
+@media (min-width: 1025px) {
+  .header {
+    max-width: 450px;
+  }
+  
+  .name {
+    font-size: 1.75rem;
+  }
+  
+  .title {
+    font-size: 1.375rem;
+  }
+}
