@@ -1,3 +1,6 @@
+@import "tailwindcss";
+
+/* Custom styles that should override Tailwind defaults */
 :root {
   --background: #ffffff;
   --foreground: #171717;
