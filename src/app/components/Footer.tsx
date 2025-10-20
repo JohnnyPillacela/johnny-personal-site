@@ -22,74 +22,85 @@ export default function Footer() {
   }
   return (
     <footer className={styles.footer}>
-      <a
-        href={LINKEDIN_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image
-          aria-hidden
-          src="/linkedin.png"
-          alt="LinkedIn icon"
-          width={16}
-          height={16}
-        />
-        LinkedIn
-      </a>
-      <button onClick={() => copyToClipboard(LINKEDIN_URL)}>
-        {copiedItem === LINKEDIN_URL ? "✅" : "📋"}
-      </button>
-      <a
-        href={GITHUB_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image
-          aria-hidden
-          src="/github-mark-white.png"
-          alt="GitHub icon"
-          width={16}
-          height={16}
-        />
-        GitHub
-      </a>
-      <button onClick={() => copyToClipboard(GITHUB_URL)}>
-        {copiedItem === GITHUB_URL ? "✅" : "📋"}
-      </button>
-      <a
-        href={PERSONAL_SITE}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image
-          aria-hidden
-          src="/ecu-johnny.PNG"
-          alt="Personal Site icon"
-          width={16}
-          height={16}
-        />
-        Personal Site
-      </a>
-      <button onClick={() => copyToClipboard(PERSONAL_SITE)}>
-        {copiedItem === PERSONAL_SITE ? "✅" : "📋"}
-      </button>
-      <a
-        href={`mailto:${EMAIL}`}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image
-          aria-hidden
-          src="/file.svg"
-          alt="Email icon"
-          width={16}
-          height={16}
-        />
-        Email
-      </a>
-      <button onClick={() => copyToClipboard(EMAIL)}>
-        {copiedItem === EMAIL ? "✅" : "📋"}
-      </button>
+      <div className={styles.footerItem}>
+        <a
+          href={LINKEDIN_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="/linkedin.png"
+            alt="LinkedIn icon"
+            width={16}
+            height={16}
+          />
+          LinkedIn
+        </a>
+        <button onClick={() => copyToClipboard(LINKEDIN_URL)}>
+          {copiedItem === LINKEDIN_URL ? "✅" : "📋"}
+        </button>
+      </div>
+      
+      <div className={styles.footerItem}>
+        <a
+          href={GITHUB_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="/github-mark-white.png"
+            alt="GitHub icon"
+            width={16}
+            height={16}
+          />
+          GitHub
+        </a>
+        <button onClick={() => copyToClipboard(GITHUB_URL)}>
+          {copiedItem === GITHUB_URL ? "✅" : "📋"}
+        </button>
+      </div>
+      
+      <div className={styles.footerItem}>
+        <a
+          href={PERSONAL_SITE}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="/ecu-johnny.PNG"
+            alt="Personal Site icon"
+            width={16}
+            height={16}
+          />
+          Personal Site
+        </a>
+        <button onClick={() => copyToClipboard(PERSONAL_SITE)}>
+          {copiedItem === PERSONAL_SITE ? "✅" : "📋"}
+        </button>
+      </div>
+      
+      <div className={styles.footerItem}>
+        <a
+          href={`mailto:${EMAIL}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="/file.svg"
+            alt="Email icon"
+            width={16}
+            height={16}
+          />
+          Email
+        </a>
+        <button onClick={() => copyToClipboard(EMAIL)}>
+          {copiedItem === EMAIL ? "✅" : "📋"}
+        </button>
+      </div>
     </footer>
   );
 }
