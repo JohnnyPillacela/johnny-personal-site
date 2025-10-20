@@ -73,6 +73,23 @@ export default function Footer() {
       <button onClick={() => copyToClipboard(PERSONAL_SITE)}>
         {copiedItem === PERSONAL_SITE ? "✅" : "📋"}
       </button>
+      <a
+        href={`mailto:${EMAIL}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          aria-hidden
+          src="/file.svg"
+          alt="Email icon"
+          width={16}
+          height={16}
+        />
+        Email
+      </a>
+      <button onClick={() => copyToClipboard(EMAIL)}>
+        {copiedItem === EMAIL ? "✅" : "📋"}
+      </button>
     </footer>
   );
 }
